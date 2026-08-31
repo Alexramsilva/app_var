@@ -53,7 +53,7 @@ with col1:
     )
 
     monto = st.number_input(
-        "💰 Monto a invertir (MXN)",
+        "💰 Monto a invertir ",
         min_value=1.0,
         value=100000.0,
         step=1000.0
@@ -209,7 +209,7 @@ if st.button(
                 f"Análisis completado para {ticker}"
             )
 
-            st.subheader("📌 Principales indicadores")
+            st.subheader("Principales indicadores")
 
             c1, c2, c3 = st.columns(3)
 
@@ -222,7 +222,7 @@ if st.button(
 
                 st.write(
                     f"Pérdida máxima histórica: "
-                    f"**${perdida_MDD:,.2f} MXN**"
+                    f"**${perdida_MDD:,.2f} **"
                 )
 
             with c2:
@@ -234,7 +234,7 @@ if st.button(
 
                 st.write(
                     f"Pérdida diaria estimada: "
-                    f"**${perdida_VaR:,.2f} MXN**"
+                    f"**${perdida_VaR:,.2f}**"
                 )
 
             with c3:
@@ -246,7 +246,7 @@ if st.button(
 
                 st.write(
                     f"Pérdida promedio extrema: "
-                    f"**${perdida_CVaR:,.2f} MXN**"
+                    f"**${perdida_CVaR:,.2f} **"
                 )
 
             # =================================================
@@ -255,7 +255,7 @@ if st.button(
 
             st.divider()
 
-            st.subheader("📊 Resumen del riesgo")
+            st.subheader("Resumen del riesgo")
 
             resumen = pd.DataFrame({
 
@@ -274,25 +274,25 @@ if st.button(
 
                 "Resultado": [
 
-                    f"${monto:,.2f} MXN",
+                    f"${monto:,.2f} ",
 
                     f"{mdd:.2%}",
 
-                    f"${perdida_MDD:,.2f} MXN",
+                    f"${perdida_MDD:,.2f} ",
 
                     f"{VaR:.2%}",
 
-                    f"${perdida_VaR:,.2f} MXN",
+                    f"${perdida_VaR:,.2f} ",
 
                     f"{CVaR:.2%}",
 
-                    f"${perdida_CVaR:,.2f} MXN",
+                    f"${perdida_CVaR:,.2f} ",
 
-                    f"${capital_MDD:,.2f} MXN",
+                    f"${capital_MDD:,.2f} ",
 
-                    f"${capital_VaR:,.2f} MXN",
+                    f"${capital_VaR:,.2f} ",
 
-                    f"${capital_CVaR:,.2f} MXN"
+                    f"${capital_CVaR:,.2f} "
                 ]
             })
 
@@ -308,7 +308,7 @@ if st.button(
 
             st.divider()
 
-            st.subheader("📈 Precio histórico")
+            st.subheader("Precio histórico")
 
             st.line_chart(precios)
 
@@ -316,7 +316,7 @@ if st.button(
             # GRÁFICA DE DRAWDOWN
             # =================================================
 
-            st.subheader("📉 Drawdown histórico")
+            st.subheader("Drawdown histórico")
 
             st.line_chart(drawdown)
 
@@ -324,7 +324,7 @@ if st.button(
             # DISTRIBUCIÓN DE RENDIMIENTOS
             # =================================================
 
-            st.subheader("📊 Distribución de rendimientos")
+            st.subheader("Distribución de rendimientos")
 
             st.bar_chart(
                 rendimientos
@@ -336,7 +336,7 @@ if st.button(
 
             st.divider()
 
-            st.subheader("💡 Interpretación")
+            st.subheader("Interpretación")
 
             st.write(
                 f"""
@@ -348,12 +348,12 @@ if st.button(
                 - Con un nivel de confianza de
                 **{confianza:.0%}**, el **VaR histórico diario**
                 es de **{VaR:.2%}**, equivalente a
-                **${perdida_VaR:,.2f} MXN**.
+                **${perdida_VaR:,.2f} **.
 
                 - El **CVaR** es de **{CVaR:.2%}**, lo que significa
                 que, considerando únicamente los peores días
                 incluidos en el VaR, la pérdida promedio fue de
-                aproximadamente **${perdida_CVaR:,.2f} MXN**.
+                aproximadamente **${perdida_CVaR:,.2f} **.
                 """
             )
 
