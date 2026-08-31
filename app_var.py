@@ -47,13 +47,13 @@ col1, col2 = st.columns(2)
 with col1:
 
     ticker = st.text_input(
-        "🔎 Clave de pizarra de Yahoo Finance",
+        "Clave de pizarra de Yahoo Finance",
         value="AAPL",
         help="Ejemplos: AAPL, MSFT, CEMEXCPO.MX, WALMEX.MX, BTC-USD"
     )
 
     monto = st.number_input(
-        "💰 Monto a invertir ",
+        "Monto a invertir ",
         min_value=1.0,
         value=100000.0,
         step=1000.0
@@ -62,13 +62,13 @@ with col1:
 with col2:
 
     periodo = st.selectbox(
-        "📅 Periodo histórico",
+        "Periodo histórico",
         ["1y", "2y", "5y", "10y", "max"],
         index=2
     )
 
     confianza = st.selectbox(
-        "🎯 Nivel de confianza",
+        "Nivel de confianza",
         [0.90, 0.95, 0.99],
         index=1,
         format_func=lambda x: f"{x:.0%}"
