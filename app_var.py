@@ -13,7 +13,6 @@ Original file is located at
 # Yahoo Finance + yfinance
 # ============================================================
 
-!pip install -q streamlit yfinance
 
 import streamlit as st
 import yfinance as yf
