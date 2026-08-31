@@ -372,3 +372,75 @@ if st.button(
             st.error(
                 f"Ocurrió un error: {e}"
             )
+
+
+
+# --- Personalización de diseño ---
+st.markdown("""
+<style>
+
+    /* Fondo principal */
+    .stApp {
+        background-color: #0E1117;
+        color: #FFFFFF;
+    }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #161B22;
+    }
+
+    /* Texto general */
+    html, body, [class*="css"]  {
+        color: #FAFAFA;
+    }
+
+    /* Títulos */
+    h1, h2, h3, h4 {
+        color: #00C897;
+    }
+
+    /* Botones */
+    .stButton>button {
+        background-color: #00C897;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        padding: 0.5em 1em;
+    }
+
+    .stButton>button:hover {
+        background-color: #00E6A0;
+        color: black;
+    }
+
+    /* Inputs */
+    .stTextInput>div>div>input {
+        background-color: #262730;
+        color: white;
+    }
+
+    /* Selectbox */
+    .stSelectbox>div>div {
+        background-color: #262730;
+        color: white;
+    }
+
+    /* Dataframe */
+    .stDataFrame {
+        background-color: #161B22;
+    }
+
+    /* Métricas */
+    div[data-testid="metric-container"] {
+        background-color: #161B22;
+        border: 1px solid #00C897;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+</style>
+""", unsafe_allow_html=True)
+
+
+# ==========================================
