@@ -29,7 +29,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("📊 Calculadora de Riesgo Financiero")
+st.title(" Calculadora de Riesgo Financiero (RiskPulse)")
 
 st.write(
     "Calcula Maximum Drawdown, VaR y CVaR utilizando "
