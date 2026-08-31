@@ -48,7 +48,7 @@ with col1:
 
     ticker = st.text_input(
         "Clave de pizarra de Yahoo Finance",
-        value="AAPL",
+        value="BTC-USD",
         help="Ejemplos: AAPL, MSFT, CEMEXCPO.MX, WALMEX.MX, BTC-USD"
     )
 
