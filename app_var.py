@@ -29,11 +29,11 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title(" Calculadora de Riesgo Financiero (RiskPulse)")
+st.title(" Licenciatura en Contaduría y Finanzas  UNRC")
 
 st.write(
-    "Calcula Maximum Drawdown, VaR y CVaR utilizando "
-    "información histórica de Yahoo Finance."
+    "Calculadora de Riesgo Financiero (RiskPulse) "
+    "Calcula Maximum Drawdown, VaR y CVaR utilizando"
 )
 
 st.divider()
