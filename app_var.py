@@ -33,7 +33,7 @@ st.title(" Licenciatura en Contaduría y Finanzas  UNRC")
 
 st.write(
     "Calculadora de Riesgo Financiero (RiskPulse) "
-    "Calcula Maximum Drawdown, VaR y CVaR utilizando"
+    "Calcula Maximum Drawdown, VaR y CVaR "
 )
 
 st.divider()
