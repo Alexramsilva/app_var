@@ -381,7 +381,7 @@ st.markdown("""
 
     /* Fondo principal */
     .stApp {
-        background-color: #0E1117;
+        background-color:#0F4C5C; # #0E1117
         color: #FFFFFF;
     }
 
